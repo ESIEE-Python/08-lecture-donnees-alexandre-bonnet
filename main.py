@@ -14,18 +14,18 @@ def read_data(filename):
     Returns:
         list: le contenu du fichier (1 list par ligne)
     """
-    l = []
-    return l
+    with open('filename', mode='r', encoding='utf8') as f:
+        s = csv.reader(f)
+    return list(s)
 
 def get_list_k(data, k):
-    l = []
-    return l
+    return data[k]
 
 def get_first(l):
-    return None
+    return l[0]
 
 def get_last(l):
-    return None
+    return l[-1]
 
 def get_max(l):
     return None
